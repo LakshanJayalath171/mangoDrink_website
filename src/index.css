@@ -1,1 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
 @import "tailwindcss";
+
+/* =========================================================
+   MANGO BRAND DESIGN SYSTEM
+   ========================================================= */
+
+:root {
+  /* =========================
+     BRAND COLORS
+     ========================= */
+
+  --mango-primary: #E69F0B;
+  --mango-dark: #DF8A05;
+  --mango-bright: #F2B30F;
+  --mango-yellow: #F4CA40;
+  --mango-orange: #D85C02;
+  --mango-deep-orange: #B56503;
+
+  /* =========================
+     SUPPORT COLORS
+     ========================= */
+
+  --leaf-green: #566B20;
+
+  --cream: #FFF5D6;
+  --white: #FFFFFF;
+
+  --dark: #261F14;
+  --dark-surface: #33271A;
+
+  --text-primary: #261F14;
+  --text-secondary: #70552D;
+
+  /* =========================
+     GRADIENTS
+     ========================= */
+
+  --gradient-mango: linear-gradient(
+    135deg,
+    #D85C02 0%,
+    #E69F0B 50%,
+    #F4CA40 100%
+  );
+
+  --gradient-mango-soft: linear-gradient(
+    135deg,
+    #E69F0B 0%,
+    #F2B30F 50%,
+    #F4CA40 100%
+  );
+
+  --gradient-mango-dark: linear-gradient(
+    135deg,
+    #B56503 0%,
+    #D85C02 50%,
+    #E69F0B 100%
+  );
+
+  --gradient-tropical: linear-gradient(
+    135deg,
+    #D85C02 0%,
+    #E69F0B 55%,
+    #566B20 100%
+  );
+
+  /* =========================
+     RADIUS
+     ========================= */
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* =========================
+     SHADOWS
+     ========================= */
+
+  --shadow-soft: 0 10px 30px rgba(38, 31, 20, 0.08);
+
+  --shadow-medium: 0 20px 50px rgba(38, 31, 20, 0.15);
+
+  --shadow-mango: 0 15px 40px rgba(230, 159, 11, 0.30);
+
+  /* =========================
+     TRANSITIONS
+     ========================= */
+
+  --transition-fast: 200ms ease;
+  --transition-normal: 400ms ease;
+  --transition-slow: 700ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inter", sans-serif;
+
+  background: var(--cream);
+  color: var(--text-primary);
+
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.mango-heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--text-primary);
+}
+
+.mango-heading-white {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
+  color: var(--white);
+}
+
+.mango-heading-gradient {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+
+  background: var(--gradient-mango);
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  color: transparent;
+}
+
+.mango-eyebrow {
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--mango-orange);
+}
+
+.mango-eyebrow-light {
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.75rem;
+  font-weight: 700;
+
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: var(--mango-yellow);
+}
+
+.mango-text {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.mango-text-light {
+  color: var(--cream);
+  line-height: 1.7;
+}
+
+.mango-text-white {
+  color: var(--white);
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   BACKGROUNDS
+   ========================================================= */
+
+.mango-bg {
+  background: var(--mango-primary);
+}
+
+.mango-bg-dark {
+  background: var(--mango-dark);
+}
+
+.mango-bg-bright {
+  background: var(--mango-bright);
+}
+
+.mango-bg-yellow {
+  background: var(--mango-yellow);
+}
+
+.mango-bg-orange {
+  background: var(--mango-orange);
+}
+
+.mango-bg-deep-orange {
+  background: var(--mango-deep-orange);
+}
+
+.mango-bg-cream {
+  background: var(--cream);
+}
+
+.mango-bg-white {
+  background: var(--white);
+}
+
+.mango-bg-dark-section {
+  background: var(--dark);
+}
+
+.mango-bg-tropical {
+  background: var(--leaf-green);
+}
+
+
+/* =========================================================
+   GRADIENT BACKGROUNDS
+   ========================================================= */
+
+.mango-gradient {
+  background: var(--gradient-mango);
+}
+
+.mango-gradient-soft {
+  background: var(--gradient-mango-soft);
+}
+
+.mango-gradient-dark {
+  background: var(--gradient-mango-dark);
+}
+
+.mango-gradient-tropical {
+  background: var(--gradient-tropical);
+}
+
+
+/* =========================================================
+   TEXT COLORS
+   ========================================================= */
+
+.text-mango {
+  color: var(--mango-primary);
+}
+
+.text-mango-bright {
+  color: var(--mango-bright);
+}
+
+.text-mango-yellow {
+  color: var(--mango-yellow);
+}
+
+.text-mango-orange {
+  color: var(--mango-orange);
+}
+
+.text-mango-dark {
+  color: var(--mango-deep-orange);
+}
+
+.text-leaf {
+  color: var(--leaf-green);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.text-mango-dark-text {
+  color: var(--text-primary);
+}
+
+.text-mango-secondary {
+  color: var(--text-secondary);
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.mango-btn {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 26px;
+
+  border: none;
+  border-radius: var(--radius-pill);
+
+  background: var(--mango-primary);
+  color: var(--white);
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.mango-btn:hover {
+  background: var(--mango-orange);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-mango);
+}
+
+.mango-btn:active {
+  transform: translateY(0);
+}
+
+
+.mango-btn-gradient {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 28px;
+
+  border: none;
+  border-radius: var(--radius-pill);
+
+  background: var(--gradient-mango);
+
+  color: var(--white);
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.mango-btn-gradient:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-mango);
+}
+
+
+.mango-btn-dark {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 14px 26px;
+
+  border: none;
+  border-radius: var(--radius-pill);
+
+  background: var(--dark);
+  color: var(--white);
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast);
+}
+
+.mango-btn-dark:hover {
+  background: var(--mango-orange);
+  transform: translateY(-3px);
+}
+
+
+.mango-btn-outline {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 25px;
+
+  border: 1.5px solid var(--mango-primary);
+  border-radius: var(--radius-pill);
+
+  background: transparent;
+
+  color: var(--mango-primary);
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.mango-btn-outline:hover {
+  background: var(--mango-primary);
+  color: var(--white);
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   GLASS EFFECTS
+   ========================================================= */
+
+.mango-glass {
+  background: rgba(255, 255, 255, 0.15);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.mango-glass-dark {
+  background: rgba(38, 31, 20, 0.55);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+
+
+/* =========================================================
+   MEDIA PLACEHOLDERS
+   ========================================================= */
+
+.mango-media {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 300px;
+
+  border-radius: var(--radius-lg);
+
+  background: var(--dark);
+
+  color: var(--mango-yellow);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  overflow: hidden;
+}
+
+.mango-media::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(242, 179, 15, 0.15),
+      transparent 60%
+    );
+}
+
+.mango-media-label {
+  position: relative;
+
+  z-index: 1;
+
+  padding: 12px 18px;
+
+  border: 1px solid rgba(244, 202, 64, 0.4);
+
+  border-radius: var(--radius-pill);
+
+  font-size: 0.75rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.mango-hero {
+  position: relative;
+
+  min-height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: var(--gradient-mango);
+}
+
+.mango-hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(38, 31, 20, 0.25),
+      rgba(38, 31, 20, 0.45)
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   SCROLL VIDEO SECTIONS
+   ========================================================= */
+
+.mango-scroll-video {
+  position: relative;
+
+  min-height: 250vh;
+
+  background: var(--dark);
+
+  overflow: hidden;
+}
+
+.mango-video-sticky {
+  position: sticky;
+
+  top: 0;
+
+  height: 100vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+}
+
+.mango-video-placeholder {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: var(--dark);
+
+  color: var(--mango-yellow);
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+
+  text-transform: uppercase;
+}
+
+
+
+
+
+/* =========================================================
+   INPUT
+   ========================================================= */
+
+.mango-input {
+  width: 100%;
+
+  padding: 15px 20px;
+
+  border: 1px solid rgba(38, 31, 20, 0.15);
+
+  border-radius: var(--radius-pill);
+
+  outline: none;
+
+  background: var(--white);
+
+  color: var(--text-primary);
+
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.mango-input:focus {
+  border-color: var(--mango-primary);
+
+  box-shadow:
+    0 0 0 4px rgba(230, 159, 11, 0.12);
+}
+
+
+
+
+
+/* =========================================================
+   SELECTION
+   ========================================================= */
+
+::selection {
+  background: var(--mango-primary);
+  color: var(--white);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--mango-primary);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--mango-orange);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+  .mango-section,
+  .mango-section-dark,
+  .mango-section-orange {
+    padding: 80px 6%;
+  }
+
+  .mango-product-image {
+    height: 320px;
+  }
+
+  .mango-scroll-video {
+    min-height: 180vh;
+  }
+
+  .mango-heading,
+  .mango-heading-white,
+  .mango-heading-gradient {
+    letter-spacing: -0.03em;
+  }
+}
+
