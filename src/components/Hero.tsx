@@ -1,6 +1,9 @@
 const Hero = () => {
   return (
     <div>
+        <div className="flex items-center justify-start px-10 py-6">
+          <h1 className="text-4xl font-bold py-4 mango-heading-white">Hello world</h1>
+        </div>
         <div className="bg-[url('../../public/Images/Hero.png')] bg-cover bg-center w-screen h-screen relative">
           <div className="absolute top-0 left-0 h-screen w-screen inset-0 bg-black/40 flex items-center justify-center text-center">
             <div>

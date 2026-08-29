@@ -1,11 +1,13 @@
+import Anim_video from './components/Anim_video'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-   <div className="mango-bg">
+   <div>
      <Navbar/>
-     <Hero/>
+     <Anim_video/>
+     {/* <Hero/> */}
    </div>
   )
 }

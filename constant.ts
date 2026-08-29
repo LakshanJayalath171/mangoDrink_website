@@ -17,13 +17,13 @@ const animatedText = [
         id: 3,
         title: "Simple Ingredients",
         description: "Carefully selected ingredients come together to let the mango take center stage.",
-        position: "absolute bottom1/4 left-0"
+        position: "absolute bottom-1/4 left-0"
     },
     {
         id: 4,
         title: "Fresh. Smooth. Refreshing.",
         description: "Every sip delivers a smooth texture and a burst of tropical freshness.",
-        position: "absolute bottom-0 right-0"
+        position: "absolute -bottom-0 right-0"
     }
 ]
 

@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <div className="w-screen h- full py-2  px-10 flex items-center justify-between mango-glass-dark ">
+    <div className="w-screen h- full py-2  px-10 flex items-center justify-between mango-gradient">
         <div>
             <img src="/images/logo.png" alt="Mango Logo" className="size-10"/>
         </div>
