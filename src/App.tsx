@@ -1,4 +1,5 @@
 import Anim_video from './components/Anim_video'
+import Crafted from './components/Crafted'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
@@ -7,6 +8,7 @@ const App = () => {
    <div>
      <Navbar/>
      <Anim_video/>
+     <Crafted/>
      {/* <Hero/> */}
    </div>
   )
