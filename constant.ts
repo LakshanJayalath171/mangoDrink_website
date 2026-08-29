@@ -35,28 +35,28 @@ const products = [
         title:'Mango Fresh',
         description:'A refreshing burst of ripe mango goodness, made with the rich, tropical flavor of naturally sweet mangoes.',
         shortDescription:'Pure mango. Pure refreshment.',
-        image:'./public/images/product01.png'
+        image:'/images/product01.png'
     },
     {
         id: 2,
         title:'Fruits Mango',
         description:'Smooth and fruity mango flavor packed into every sip — a delicious refreshment for any moment.',
         shortDescription:'Bold mango flavor. Naturally refreshing.',
-        image:'./public/images/product02.png'
+        image:'/images/product02.png'
     },
     {
         id: 3,
         title:'Mango Fresh Pure',
         description:'Experience the authentic taste of juicy mangoes with a smooth, naturally refreshing finish.',
         shortDescription:'The taste of perfectly ripe mangoes.',
-        image:'./public/images/product03.png'
+        image:'/images/product03.png'
     },
     {
         id: 4,
         title:'Siplicious Mango',
         description:'A delicious mango fruit drink with a vibrant tropical taste that makes every sip irresistible.',
         shortDescription:'Smooth, tropical, irresistibly delicious.',
-        image:'./public/images/product04.png'
+        image:'/images/product04.png'
     }
 ]
 
